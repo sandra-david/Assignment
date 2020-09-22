@@ -1,0 +1,37 @@
+<?xml version="1.0"?>
+<WellBeings>
+  
+  <Product>
+	  <id>2</id>
+      <ProductName>Strawberries</ProductName>
+	  <image>demo-image-01.jpg</image>
+      <Description>Interdum consectetur libero id faucibus nisl tincidunt. Risus sed vulputate odio ut enim blandit volutpat. Fermentum leo vel orci porta non pulvinar neque laoreet suspendisse. Vitae turpis massa sed elementum tempus egestas sed sed risus. Mi quis hendrerit dolor magna eget est lorem ipsum dolor.</Description>
+	  <featured>1</featured>
+	  <type>red</type>
+  </Product>
+  <Product>
+	  <id>3</id>
+      <ProductName>Blueberries</ProductName>
+	  <image>demo-image-02.jpg</image>
+      <Description>Interdum consectetur libero id faucibus nisl tincidunt. Risus sed vulputate odio ut enim blandit volutpat. Fermentum leo vel orci porta non pulvinar neque laoreet suspendisse. Vitae turpis massa sed elementum tempus egestas sed sed risus. Mi quis hendrerit dolor magna eget est lorem ipsum dolor.</Description>
+	  <featured>0</featured>
+	  <type>blue</type>
+  </Product>
+  <Product>
+	  <id>4</id>
+      <ProductName>Cranberries</ProductName>
+	  <image>demo-image-03.jpg</image>
+      <Description>Interdum consectetur libero id faucibus nisl tincidunt. Risus sed vulputate odio ut enim blandit volutpat. Fermentum leo vel orci porta non pulvinar neque laoreet suspendisse. Vitae turpis massa sed elementum tempus egestas sed sed risus. Mi quis hendrerit dolor magna eget est lorem ipsum dolor.</Description>
+	  <featured>0</featured>
+	  <type>red</type>
+  </Product>
+  <Product>
+	<id>1</id>
+	<ProductName>Blackberries</ProductName>
+	<image>demo-image-00.jpg</image>
+	<Description>Interdum consectetur libero id faucibus nisl tincidunt. Risus sed vulputate odio ut enim blandit volutpat. Fermentum leo vel orci porta non pulvinar neque laoreet suspendisse. Vitae turpis massa sed elementum tempus egestas sed sed risus. Mi quis hendrerit dolor magna eget est lorem ipsum dolor. Egestas dui id ornare arcu. Ac turpis egestas sed tempus. Lectus urna duis convallis convallis.</Description>
+	<featured>0</featured>
+	<type>blue</type>
+  </Product>
+</WellBeings>
+

@@ -1,0 +1,255 @@
+﻿@{
+    ViewBag.Title = "Products";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+    Bundle jsBundle = new Bundle("~/js", new JsMinify());
+    Bundle styleBundle = new Bundle("~/css", new CssMinify());
+
+    styleBundle.IncludeDirectory("~/css", "styles.css");
+    jsBundle.IncludeDirectory("~/js", "scripts.js");
+    int count = 0;
+
+
+
+#line default
+#line hidden
+
+#line 4 "C:\Users\sandr\Documents\learning\CSharpNet\WellBeing\SandraDavidWebDevAssignment\WellBeingCampaign\Views\Products\Index.cshtml"
+    foreach (var item in Model)
+    {
+        if (item.Featured == 1)
+        {
+
+#line default
+#line hidden
+
+#line 5 "C:\Users\sandr\Documents\learning\CSharpNet\WellBeing\SandraDavidWebDevAssignment\WellBeingCampaign\Views\Products\Index.cshtml"
+
+
+
+#line default
+#line hidden
+
+#line 6 "C:\Users\sandr\Documents\learning\CSharpNet\WellBeing\SandraDavidWebDevAssignment\WellBeingCampaign\Views\Products\Index.cshtml"
+            __o = item.ImageName;
+
+
+#line default
+#line hidden
+
+#line 7 "C:\Users\sandr\Documents\learning\CSharpNet\WellBeing\SandraDavidWebDevAssignment\WellBeingCampaign\Views\Products\Index.cshtml"
+            __o = item.ProductName;
+
+
+#line default
+#line hidden
+
+#line 8 "C:\Users\sandr\Documents\learning\CSharpNet\WellBeing\SandraDavidWebDevAssignment\WellBeingCampaign\Views\Products\Index.cshtml"
+            __o = item.ProductName;
+
+
+#line default
+#line hidden
+
+#line 9 "C:\Users\sandr\Documents\learning\CSharpNet\WellBeing\SandraDavidWebDevAssignment\WellBeingCampaign\Views\Products\Index.cshtml"
+            __o = item.Description;
+
+
+#line default
+#line hidden
+
+#line 10 "C:\Users\sandr\Documents\learning\CSharpNet\WellBeing\SandraDavidWebDevAssignment\WellBeingCampaign\Views\Products\Index.cshtml"
+
+        }
+
+
+
+#line default
+#line hidden
+
+#line 11 "C:\Users\sandr\Documents\learning\CSharpNet\WellBeing\SandraDavidWebDevAssignment\WellBeingCampaign\Views\Products\Index.cshtml"
+
+
+        string cssClass = "row justify-content-center no-gutters mb-5 mb-lg-0";
+        string cssClass1 = "col-lg-6";
+        if (count % 2 == 0)
+        {
+            cssClass = "row justify-content-center no-gutters";
+            cssClass1 = "col-lg-6 order-lg-first";
+        }
+        if (count == 0)
+        {
+
+
+#line default
+#line hidden
+
+#line 12 "C:\Users\sandr\Documents\learning\CSharpNet\WellBeing\SandraDavidWebDevAssignment\WellBeingCampaign\Views\Products\Index.cshtml"
+
+        }
+
+
+#line default
+#line hidden
+
+#line 13 "C:\Users\sandr\Documents\learning\CSharpNet\WellBeing\SandraDavidWebDevAssignment\WellBeingCampaign\Views\Products\Index.cshtml"
+        __o = item.Type;
+
+
+#line default
+#line hidden
+
+#line 14 "C:\Users\sandr\Documents\learning\CSharpNet\WellBeing\SandraDavidWebDevAssignment\WellBeingCampaign\Views\Products\Index.cshtml"
+        __o = cssClass;
+
+
+#line default
+#line hidden
+
+#line 15 "C:\Users\sandr\Documents\learning\CSharpNet\WellBeing\SandraDavidWebDevAssignment\WellBeingCampaign\Views\Products\Index.cshtml"
+        n                                                                    __o = item.ImageName;
+
+
+#line default
+#line hidden
+
+#line 16 "C:\Users\sandr\Documents\learning\CSharpNet\WellBeing\SandraDavidWebDevAssignment\WellBeingCampaign\Views\Products\Index.cshtml"
+        __o = item.ProductName;
+
+
+#line default
+#line hidden
+
+#line 17 "C:\Users\sandr\Documents\learning\CSharpNet\WellBeing\SandraDavidWebDevAssignment\WellBeingCampaign\Views\Products\Index.cshtml"
+        __o = cssClass1;
+
+
+#line default
+#line hidden
+
+#line 18 "C:\Users\sandr\Documents\learning\CSharpNet\WellBeing\SandraDavidWebDevAssignment\WellBeingCampaign\Views\Products\Index.cshtml"
+        __o = item.ProductName;
+
+
+#line default
+#line hidden
+
+#line 19 "C:\Users\sandr\Documents\learning\CSharpNet\WellBeing\SandraDavidWebDevAssignment\WellBeingCampaign\Views\Products\Index.cshtml"
+        __o = item.Description;
+
+
+#line default
+#line hidden
+
+#line 20 "C:\Users\sandr\Documents\learning\CSharpNet\WellBeing\SandraDavidWebDevAssignment\WellBeingCampaign\Views\Products\Index.cshtml"
+
+
+        count++;
+
+        }
+
+
+
+#line default
+#line hidden
+
+#line 11 "C:\Users\sandr\Documents\learning\CSharpNet\WellBeing\SandraDavidWebDevAssignment\WellBeingCampaign\Views\Products\Index.cshtml"
+
+
+        string cssClass = "row justify-content-center no-gutters mb-5 mb-lg-0";
+        string cssClass1 = "col-lg-6";
+        if (count % 2 == 0)
+        {
+            cssClass = "row justify-content-center no-gutters";
+            cssClass1 = "col-lg-6 order-lg-first";
+        }
+        if(count == 1)
+        {
+
+        }
+
+
+#line default
+#line hidden
+
+#line 12 "C:\Users\sandr\Documents\learning\CSharpNet\WellBeing\SandraDavidWebDevAssignment\WellBeingCampaign\Views\Products\Index.cshtml"
+
+
+
+
+#line default
+#line hidden
+
+#line 13 "C:\Users\sandr\Documents\learning\CSharpNet\WellBeing\SandraDavidWebDevAssignment\WellBeingCampaign\Views\Products\Index.cshtml"
+
+
+
+
+#line default
+#line hidden
+
+#line 14 "C:\Users\sandr\Documents\learning\CSharpNet\WellBeing\SandraDavidWebDevAssignment\WellBeingCampaign\Views\Products\Index.cshtml"
+
+
+
+#line default
+#line hidden
+
+#line 15 "C:\Users\sandr\Documents\learning\CSharpNet\WellBeing\SandraDavidWebDevAssignment\WellBeingCampaign\Views\Products\Index.cshtml"
+        __o = cssClass;
+
+
+#line default
+#line hidden
+
+#line 16 "C:\Users\sandr\Documents\learning\CSharpNet\WellBeing\SandraDavidWebDevAssignment\WellBeingCampaign\Views\Products\Index.cshtml"
+        __o = item.ImageName;
+
+
+#line default
+#line hidden
+
+#line 17 "C:\Users\sandr\Documents\learning\CSharpNet\WellBeing\SandraDavidWebDevAssignment\WellBeingCampaign\Views\Products\Index.cshtml"
+        __o = item.ProductName;
+
+
+#line default
+#line hidden
+
+#line 18 "C:\Users\sandr\Documents\learning\CSharpNet\WellBeing\SandraDavidWebDevAssignment\WellBeingCampaign\Views\Products\Index.cshtml"
+        __o = cssClass1;
+
+
+#line default
+#line hidden
+
+#line 19 "C:\Users\sandr\Documents\learning\CSharpNet\WellBeing\SandraDavidWebDevAssignment\WellBeingCampaign\Views\Products\Index.cshtml"
+        __o = item.ProductName;
+
+
+#line default
+#line hidden
+
+#line 20 "C:\Users\sandr\Documents\learning\CSharpNet\WellBeing\SandraDavidWebDevAssignment\WellBeingCampaign\Views\Products\Index.cshtml"
+        __o = item.Description;
+
+
+#line default
+#line hidden
+
+#line 21 "C:\Users\sandr\Documents\learning\CSharpNet\WellBeing\SandraDavidWebDevAssignment\WellBeingCampaign\Views\Products\Index.cshtml"
+                  <section class="projects-section bg-light" id="projects">
+    <div class="container">
+        <!-- Product detail view-->
+        <div class="row align-items-center no-gutters mb-4 mb-lg-5">
+            <div class="col-xl-8 col-lg-7"><img class="img-fluid mb-3 mb-lg-0" src="assets/bg-masthead.png" alt="" /></div>
+            <div class="col-xl-4 col-lg-5">
+                <div class="featured-text text-center text-lg-left">
+                    <h4>Featured Product</h4>
+                    <p class="text-black-50 mb-0">Interdum consectetur libero id faucibus nisl tincidunt. Risus sed vulputate odio ut enim blandit volutpat. Fermentum leo vel orci porta non pulvinar neque laoreet suspendisse. Vitae turpis massa sed elementum tempus egestas sed sed risus. Mi quis hendrerit dolor magna eget est lorem ipsum dolor. Egestas dui id ornare arcu. Ac turpis egestas sed tempus. Lectus urna duis convallis convallis. Eu tincidunt tortor aliquam nulla facilisi. Leo vel orci porta non pulvinar neque.</p>
+                </div>
+            </div>
+        </div>
+        
+        
+    </div>
+</section>

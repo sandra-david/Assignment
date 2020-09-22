@@ -1,0 +1,65 @@
+﻿@{
+    ViewBag.Title = "Products";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+    int count = 0;
+    
+}
+@using WellBeingCampaign.Models;
+@model IEnumerable<WellBeingCampaign.Models.Products>
+
+<section class="projects-section bg-light" id="projects">
+    <div class="container">
+
+        @foreach (var item in Model)
+        {
+            if (item.Featured == 1)
+            {<!-- Featured product Row-->
+                <div class="row align-items-center no-gutters mb-4 mb-lg-5">
+                    <div class="col-xl-8 col-lg-7"><img class="img-fluid mb-3 mb-lg-0" src="~/assets/@item.ImageName" alt="@item.ProductName" /></div>
+                    <div class="col-xl-4 col-lg-5">
+                        <div class="featured-text text-center text-lg-left">
+                            <h4>@item.ProductName</h4>
+                            <p class="text-black-50 mb-0"> @item.Description</p>
+                        </div>
+                    </div>
+                </div>
+            }
+
+            <!-- product Rows-->
+
+            string cssClass = "row justify-content-center no-gutters mb-5 mb-lg-0";
+            string cssClass1 = "col-lg-6";
+            if (count % 2 == 0)
+            {
+                cssClass = "row justify-content-center no-gutters";
+                cssClass1 = "col-lg-6 order-lg-first";
+            }
+            if (count == 0)
+            {
+                <div id="myBtnContainer">
+                    <button class="flt-btn active" onclick="filterSelection('all')"> Show all</button>
+                    <button class="flt-btn" onclick="filterSelection('red')"> Red Fruit</button>
+                    <button class="flt-btn" onclick="filterSelection('blue')"> Blue Fruit</button>
+
+                </div>
+            }
+            <div class="filterDiv @item.Type">
+            <div class="@cssClass ">
+                <div class="col-lg-6"><img class="img-fluid" src="~/assets/@item.ImageName" alt="@item.ProductName" /></div>
+                <div class="@cssClass1">
+                    <div class="bg-black text-center h-100 project">
+                        <div class="d-flex h-100">
+                            <div class="project-text w-100 my-auto text-center text-lg-left">
+                                <h4 class="text-white">@item.ProductName</h4>
+                                <p class="mb-0 text-white-50">@item.Description</p>
+                                <hr class="d-none d-lg-block mb-0 ml-0" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </div>
+            
+            count++;
+
+        }
